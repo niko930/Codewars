@@ -1,6 +1,3 @@
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.stream.IntStream;
 /**
  * 创建源源不断的素数 - 有点像IntStream.of(2, 3, 5, 7, 11, 13, 17)，但无限。该流必须能够在几秒钟内产生一百万个素数。
