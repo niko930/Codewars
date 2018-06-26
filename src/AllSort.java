@@ -1,14 +1,13 @@
 public class AllSort {
+	/**
+	 * 全排列
+	 */
 	public static void main(String[] args){
 		int[] a = {1,2,3};
-		
 		allSort(a,0,a.length-1);
-		
-		
 	}
 
 	private static void allSort(int[] a, int start, int end) {
-		
 		if(start == end) {
 			for (int i : a) {
 				System.out.print(i);
@@ -29,5 +28,4 @@ public class AllSort {
 		a[i] =a[start];
 		a[start] = temp;
 	}
-
 }
