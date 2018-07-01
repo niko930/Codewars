@@ -18,13 +18,4 @@ public class CountingDuplicates {
         return count;
     }
 
-    public static void main(String[] args) {
-
-        String text = "Indivisibilities";
-
-        int i = CountingDuplicates.duplicateCount(text);
-
-        System.out.println(i);
-    }
-
 }
