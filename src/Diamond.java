@@ -1,10 +1,4 @@
 public class Diamond {
-    public static void main(String[] args) {
-
-        int n = 5;
-        String print = Diamond.print(n);
-        System.out.println(print);
-    }
 
     public static String print(int n) {
         if (n % 2 == 0 || n <= 0)
@@ -40,7 +34,12 @@ public class Diamond {
                 }
             }
         }
-
         return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        int n = 5;
+        String print = Diamond.print(n);
+        System.out.println(print);
     }
 }

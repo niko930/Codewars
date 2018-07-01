@@ -1,4 +1,16 @@
 public class LongestSlideDown {
+    /**
+     * 找出一条从塔尖往下滑的通道，这条通道所有数字相加是最大的。
+     */
+    private static int longestSlideDown(int[][] pyramid) {
+        for (int i = pyramid.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                pyramid[i - 1][j] += Math.max(pyramid[i][j], pyramid[i][j + 1]);
+            }
+        }
+        return pyramid[0][0];
+    }
+
     public static void main(String[] args) {
         int[][] a = {
                 {75},
@@ -19,15 +31,5 @@ public class LongestSlideDown {
         };
         int longestSlideDown = LongestSlideDown.longestSlideDown(a);
         System.out.println(longestSlideDown);
-    }
-
-
-    private static int longestSlideDown(int[][] pyramid) {
-        for (int i = pyramid.length - 1; i > 0; i--) {
-            for (int j = 0; j < i; j++) {
-                pyramid[i - 1][j] += Math.max(pyramid[i][j], pyramid[i][j + 1]);
-            }
-        }
-        return pyramid[0][0];
     }
 }
