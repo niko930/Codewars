@@ -1,11 +1,8 @@
 public class Maskify {
-	public static void main(String[] args) {
-		
-		String str = Maskify.maskify("4556364607935616");
-		System.out.println(str);
-		
-	}
-	
+
+	/**
+	 * 除了后四位,其他用#代替
+	 */
 	private static String maskify(String str) {
 		char[] ch = str.toCharArray();
 		if(ch.length <= 4) {
@@ -21,4 +18,9 @@ public class Maskify {
 		}
 		return string;
     }
+
+	public static void main(String[] args) {
+		String str = Maskify.maskify("4556364607935616");
+		System.out.println(str);
+	}
 }
