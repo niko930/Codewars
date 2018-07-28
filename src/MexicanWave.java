@@ -3,15 +3,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MexicanWave {
-	public static void main(String[] args) {
-		String str = " hello im dog ";
-		String[] wave = MexicanWave.wave(str);
-
-		System.out.println(Arrays.toString(wave));
-	}
-
+	/**
+	 * wave("hello") => ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
+	 */
 	private static String[] wave(String str) {
-
 		char[] c = str.toCharArray();
 		System.out.println(c.length);
 		int countStr = 0;
@@ -50,7 +45,6 @@ public class MexicanWave {
 			chs[i] = chs[i].toLowerCase();
 		}
 
-
 		List<String> strList= Arrays.asList(strings);
 		List<String> strListNew=new ArrayList<>();        
 
@@ -66,5 +60,11 @@ public class MexicanWave {
 		System.out.println(Arrays.toString(strNewArray));
 
 		return strNewArray;
+	}
+
+	public static void main(String[] args) {
+		String str = " hello im dog ";
+		String[] wave = MexicanWave.wave(str);
+		System.out.println(Arrays.toString(wave));
 	}
 }
