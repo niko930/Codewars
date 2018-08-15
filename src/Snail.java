@@ -1,4 +1,7 @@
 public class Snail {
+    /**
+     * 蜗牛旋转排序
+     */
     public static int[] snail(int[][] array) {
         if (array[0].length == 0) return new int[0];
         int n = array.length;
@@ -22,7 +25,8 @@ public class Snail {
                         {7, 8, 9}
                         };
         int[] snail = Snail.snail(array);
-
-        System.out.print(snail);
+        for(int i:snail){
+            System.out.println(i);
+        }
     }
 }
