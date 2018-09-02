@@ -21,19 +21,7 @@ public class PlayPass {
      *
      * "4897 NkTrC Hq fT67 GjV Pq aP OqTh gOcE CoPcTi aO",
      * 				PlayPass.playPass("MY GRANMA CAME FROM NY ON THE 23RD OF APRIL 2015", 2
-     * @param args
      */
-
-    public static void main(String[] args) {
-        String s = "MY GRANMA CAME FROM NY ON THE 23RD OF APRIL 2015";
-        int n = 2;
-
-        String s1 = PlayPass.playPass(s, n);
-
-        System.out.println(s1);
-
-    }
-
     private static String playPass(String s, int n) {
         s = s.toUpperCase();
         System.out.println(s);
@@ -61,5 +49,12 @@ public class PlayPass {
             sb.append(chars[i]);
         }
         return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        String s = "MY GRANMA CAME FROM NY ON THE 23RD OF APRIL 2015";
+        int n = 2;
+        String s1 = PlayPass.playPass(s, n);
+        System.out.println(s1);
     }
 }
