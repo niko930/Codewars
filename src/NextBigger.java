@@ -13,11 +13,7 @@ public class NextBigger {
             }
         }
 
-
-
         System.out.println(s);
-
-
         return n;
     }
 
