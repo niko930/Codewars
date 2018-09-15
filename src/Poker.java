@@ -4,9 +4,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
-
 public class Poker {
+	/**
+	 * 模拟拖拉机纸牌游戏
+	 */
 	public static void main(String[] args) {
 //		List<String> list = new ArrayList<String>();
 //		list = randomPokers();
