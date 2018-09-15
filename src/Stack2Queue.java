@@ -1,5 +1,8 @@
 import java.util.Stack;
 
+/**
+ * 用栈表示队列
+ */
 public class Stack2Queue {
 
     Stack stack1 = new Stack();
