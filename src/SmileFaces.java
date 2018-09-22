@@ -2,8 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SmileFaces {
+	/**
+	 * 判断笑脸个数
+	 */
 	public static void main(String[] args) {
-		ArrayList<String> a = new ArrayList<String>();
+		ArrayList<String> a = new ArrayList<>();
 		a.add(":)"); a.add(":D"); a.add(":-}"); a.add(":-()");
 		a.add(":)"); a.add("XD"); a.add(":0}"); a.add("x:-"); a.add("):-"); a.add("D:");
 		System.out.println(a.toString());
@@ -18,7 +21,6 @@ public class SmileFaces {
 			if(string.matches("^[:;][-~]?[\\)D]$")) {
 				count++;
 			}
-			System.out.println(count);
 		}
 		return count;
 	  }
