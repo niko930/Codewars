@@ -3,7 +3,8 @@ import java.util.Stack;
 
 public class Calc {
 	public static void main(String[] args) {
-		String string = "1 3 +";
+		//5 + ((1 + 2) * 4) - 3
+		String string = "5 1 2 + 4 * + 3 -";
 		double evaluate = Calc.evaluate(string);
 		System.out.println(evaluate);
 	}
@@ -18,7 +19,7 @@ public class Calc {
 		
 		String check = "+-*/";
 		
-		Stack<String> stack = new Stack<String>();
+		Stack<String> stack = new Stack<>();
 		for (String s : str) {
 			if(!check.contains(s)) {
 				stack.push(s);
