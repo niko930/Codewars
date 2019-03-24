@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Kata {
+public class Sorttheodd {
 	public static void main(String[] args) {
 		int[] a = new int[] {29, 51, 2, 9, 58, 10, 16, 16};
 
