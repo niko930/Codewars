@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class CountingDuplicates {
     public static void main(String[] args) {
 
@@ -10,7 +8,7 @@ public class CountingDuplicates {
         System.out.println(i);
     }
 
-    public static int duplicateCount(String text) {
+    private static int duplicateCount(String text) {
         text = text.toLowerCase();
         int count = 0;
         while(text.length() > 0){
