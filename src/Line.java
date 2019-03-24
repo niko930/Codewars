@@ -6,8 +6,7 @@ public class Line {
 
     }
 
-
-    public static String Tickets(int[] peopleInLine) {
+    private static String Tickets(int[] peopleInLine) {
 
         int count25 = 0;
         int count50 = 0;
