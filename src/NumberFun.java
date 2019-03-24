@@ -1,6 +1,7 @@
 public class NumberFun {
     public static void main(String[] args) {
         long nextSquare = NumberFun.findNextSquare(100L);
+        System.out.print(nextSquare);
     }
 
     public static long findNextSquare(long sq) {
