@@ -1,10 +1,9 @@
 public class DescendingOrder {
 	public static void main(String[] args) {
-		DescendingOrder.sortDesc(123455347);
-		
-		
+		int i = DescendingOrder.sortDesc(123455347);
+		System.out.print(i);
 	}
-	public static int sortDesc(final int num) {
+	private static int sortDesc(final int num) {
 		
 		String str = String.valueOf(num);
 		int[] a = new int[str.length()];
@@ -24,9 +23,7 @@ public class DescendingOrder {
 			}
 		}
 		StringBuffer sb = new StringBuffer();
-		for(int i=0;i<a.length;i++) {
-			sb.append(a[i]);
-		}
+		for(int i=0;i<a.length;i++) sb.append(a[i]);
 		
 		return Integer.valueOf(sb.toString());
 	}
