@@ -8,11 +8,11 @@ public class LongestConsec {
 
         String s = LongestConsec.longestConsec(str, a);
 
-        System.out.println("主方法输出" + s);
+        System.out.println("输出" + s);
 
     }
 
-    public static String longestConsec(String[] strarr, int k) {
+    private static String longestConsec(String[] strarr, int k) {
 
         int strarrLenth = strarr.length;
         if(strarrLenth == 0 || k > strarrLenth || k <= 0){
