@@ -2,7 +2,7 @@
 
 public class BraceChecker {
 	public static void main(String[] args) {
-		String str = "(){}[]()";
+		String str = "(){}[]({})";
 
 		boolean b = BraceChecker.isValid(str);
 		System.out.println(b);
