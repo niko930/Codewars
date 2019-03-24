@@ -36,7 +36,7 @@ public class PlayPass {
 
     }
 
-    public static String playPass(String s, int n) {
+    private static String playPass(String s, int n) {
         s = s.toUpperCase();
         System.out.println(s);
         char[] chars = s.toCharArray();
