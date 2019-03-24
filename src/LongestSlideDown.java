@@ -23,16 +23,12 @@ public class LongestSlideDown {
 		System.out.println(longestSlideDown);
 	}
 	
-	public static int longestSlideDown(int[][] pyramid) {
-		System.out.println(pyramid.length);
+	private static int longestSlideDown(int[][] pyramid) {
 		for(int i = pyramid.length-1;i>0;i--) {
-			System.out.println("i="+i);
 			for(int j=0;j<i;j++) {
-				System.out.println("j="+j);
 				pyramid[i-1][j] += Math.max(pyramid[i][j] , pyramid[i][j+1]);
 			}
 		}
-		
 		return pyramid[0][0];
 	}
 }
