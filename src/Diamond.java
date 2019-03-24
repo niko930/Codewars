@@ -1,7 +1,7 @@
 public class Diamond {
 	public static void main(String[] args) {
 
-		int n = 3;
+		int n = 5;
 		String print = Diamond.print(n);
 		System.out.println(print);
 	}
