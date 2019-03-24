@@ -1,7 +1,7 @@
 
 public class BitCounting {
 	public static void main(String[] args) {
-		int num = BitCounting.countBits(1234);
+		int num = BitCounting.countBits(854);
 		System.out.println(num);
 		
 	}
@@ -16,6 +16,7 @@ public class BitCounting {
 				count++;
 			}
 		}
+
 		return count;
 	}
 }
