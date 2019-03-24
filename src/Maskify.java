@@ -6,7 +6,7 @@ public class Maskify {
 		
 	}
 	
-	public static String maskify(String str) {
+	private static String maskify(String str) {
 		char[] ch = str.toCharArray();
 		if(ch.length <= 4) {
 			return str;
