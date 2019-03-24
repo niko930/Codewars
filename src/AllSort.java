@@ -22,7 +22,6 @@ public class AllSort {
 			allSort(a, start+1, end);
 			swap(a,i,start);
 		}
-		
 	}
 
 	private static void swap(int[] a, int i, int start) {
