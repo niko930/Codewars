@@ -1,6 +1,8 @@
-
 public class simpleGame {
-
+    /**
+     * 来源知乎
+     * 你有机会玩一个游戏,玩一次得到5000元但是有百万分之一的几率死去,问玩几次
+     */
     public static void main(String[] args) {
 
         Long money = 5000L;   //5000元
