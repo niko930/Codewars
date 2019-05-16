@@ -1,13 +1,9 @@
 public class CountingDuplicates {
-    public static void main(String[] args) {
-
-        String text = "Indivisibilities";
-
-        int i = CountingDuplicates.duplicateCount(text);
-
-        System.out.println(i);
-    }
-
+    /**
+     * 计算重复数
+     *
+     * 编写一个函数，返回输入字符串中出现多次的不区分大小写的字母字符和数字的计数。可以假定输入字符串只包含字母（大写和小写）和数字。
+     */
     private static int duplicateCount(String text) {
         text = text.toLowerCase();
         int count = 0;
@@ -20,6 +16,15 @@ public class CountingDuplicates {
             }
         }
         return count;
+    }
+
+    public static void main(String[] args) {
+
+        String text = "Indivisibilities";
+
+        int i = CountingDuplicates.duplicateCount(text);
+
+        System.out.println(i);
     }
 
 }
