@@ -1,4 +1,3 @@
-
 public class Singleton {
 	
 	private static volatile Singleton singleton;
