@@ -1,5 +1,7 @@
-
 public class TenMinWalk {
+	/**
+	 *	判断这个人是否走了10步路并且回到原地
+	 */
 	public static void main(String[] args) {
 
 		char[] a = {'n', 's', 'w', 'e'};
