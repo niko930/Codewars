@@ -1,6 +1,8 @@
 import java.util.Arrays;
 
-
+/**
+ * 判断两个数组其中一个数组的子元素是否是另一个数组子元素的的平方
+ */
 public class AreSame {
 
     public static void main(String[] args) {
@@ -11,8 +13,8 @@ public class AreSame {
     }
 
     public static boolean comp(int[] a, int[] b) {
-        System.out.println("a=" + Arrays.toString(a));
-        System.out.println("b=" + Arrays.toString(b));
+//        System.out.println("a=" + Arrays.toString(a));
+//        System.out.println("b=" + Arrays.toString(b));
 
         if (a.length == 0 && b.length == 0) {
             return true;
@@ -25,17 +27,17 @@ public class AreSame {
         int count = 0;
         for (int i = 0; i < a.length; i++) {
             int c = a[i] * a[i];
-            System.out.println("c=" + c);
+//            System.out.println("c=" + c);
 
             for (int j = 0; j < b.length; j++) {
                 if (c == b[j]) {
                     b[j] = -1;
-                    System.out.println("+++");
+//                    System.out.println("+++");
                     count++;
                 }
             }
 
-            System.out.println("count=" + count);
+//            System.out.println("count=" + count);
             count++;
         }
         if (count >= a.length) {
