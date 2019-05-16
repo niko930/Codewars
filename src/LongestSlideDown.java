@@ -1,9 +1,7 @@
-
-
 public class LongestSlideDown {
-	public static void main(String[] args) {
-		int [][] a = {
-				{75},
+    public static void main(String[] args) {
+        int[][] a = {
+                {75},
                 {95, 64},
                 {17, 47, 82},
                 {18, 35, 87, 10},
@@ -19,16 +17,17 @@ public class LongestSlideDown {
                 {63, 66, 4, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31},
                 {4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23},
         };
-		int longestSlideDown = LongestSlideDown.longestSlideDown(a);
-		System.out.println(longestSlideDown);
-	}
-	
-	private static int longestSlideDown(int[][] pyramid) {
-		for(int i = pyramid.length-1;i>0;i--) {
-			for(int j=0;j<i;j++) {
-				pyramid[i-1][j] += Math.max(pyramid[i][j] , pyramid[i][j+1]);
-			}
-		}
-		return pyramid[0][0];
-	}
+        int longestSlideDown = LongestSlideDown.longestSlideDown(a);
+        System.out.println(longestSlideDown);
+    }
+
+
+    private static int longestSlideDown(int[][] pyramid) {
+        for (int i = pyramid.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                pyramid[i - 1][j] += Math.max(pyramid[i][j], pyramid[i][j + 1]);
+            }
+        }
+        return pyramid[0][0];
+    }
 }

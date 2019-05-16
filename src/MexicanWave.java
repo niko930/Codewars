@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -22,6 +21,8 @@ public class MexicanWave {
 			}
 			countStr++;
 		}
+		System.out.println(countStr);
+
 		String[] chs = new String[c.length];
 
 		for(int i=0;i<chs.length;i++) {
@@ -39,6 +40,7 @@ public class MexicanWave {
 				continue;
 			}
 			chs[i] = chs[i].toUpperCase();
+			System.out.println(chs[i]);
 
 			while(strings[i].length() != c.length) {
 				System.out.println("strings[i].length()"+strings[i].length());
@@ -60,6 +62,8 @@ public class MexicanWave {
 
 		}       
 		 String[] strNewArray = strListNew.toArray(new String[strListNew.size()]); 
+
+		System.out.println(Arrays.toString(strNewArray));
 
 		return strNewArray;
 	}

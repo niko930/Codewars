@@ -15,7 +15,7 @@ public class SmileFaces {
 	public static int countSmileys(List<String> arr) {
 		int count = 0;
 		for (String string : arr) {
-			if(string.matches("^[\\:\\;][\\-\\~]?[\\)D]$")) {
+			if(string.matches("^[:;][-~]?[\\)D]$")) {
 				count++;
 			}
 			System.out.println(count);

@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Snail {
     public static int[] snail(int[][] array) {
         if (array[0].length == 0) return new int[0];

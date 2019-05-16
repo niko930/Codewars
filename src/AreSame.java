@@ -1,3 +1,6 @@
+import java.util.Arrays;
+
+
 public class AreSame {
 
     public static void main(String[] args) {
@@ -8,27 +11,35 @@ public class AreSame {
     }
 
     public static boolean comp(int[] a, int[] b) {
-        if(a.length == 0 && b.length == 0){
+        System.out.println("a=" + Arrays.toString(a));
+        System.out.println("b=" + Arrays.toString(b));
+
+        if (a.length == 0 && b.length == 0) {
             return true;
         }
 
-        if(a == null || b == null || a.length == 0 || b.length == 0){
+        if (a == null || b == null || a.length == 0 || b.length == 0) {
             return false;
         }
 
         int count = 0;
-        for(int i=0;i<a.length;i++){
-            int c = a[i]*a[i];
+        for (int i = 0; i < a.length; i++) {
+            int c = a[i] * a[i];
+            System.out.println("c=" + c);
 
-            for (int j=0;j<b.length;j++) {
-                if(c == b[j]){
+            for (int j = 0; j < b.length; j++) {
+                if (c == b[j]) {
                     b[j] = -1;
+                    System.out.println("+++");
                     count++;
                 }
             }
-            if(count >= a.length){
-                return true;
-            }
+
+            System.out.println("count=" + count);
+            count++;
+        }
+        if (count >= a.length) {
+            return true;
         }
 
         return false;

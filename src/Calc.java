@@ -1,9 +1,7 @@
-
 import java.util.Stack;
 
 public class Calc {
 	public static void main(String[] args) {
-		//5 + ((1 + 2) * 4) - 3
 		String string = "5 1 2 + 4 * + 3 -";
 		double evaluate = Calc.evaluate(string);
 		System.out.println(evaluate);

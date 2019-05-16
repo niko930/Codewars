@@ -6,6 +6,7 @@ public class Line {
 
     }
 
+
     private static String Tickets(int[] peopleInLine) {
 
         int count25 = 0;
