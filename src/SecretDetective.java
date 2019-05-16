@@ -1,8 +1,9 @@
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 给出一串字母其中三个子元素按先后顺序排列的几个集合,求这串字母
+ */
 public class SecretDetective {
 	public static void main(String[] args) {
 		String s = "whatisup";
