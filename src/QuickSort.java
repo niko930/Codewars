@@ -1,6 +1,8 @@
-
 import java.util.Arrays;
 
+/**
+ * 快速排序
+ */
 public class QuickSort {
 	public static void main(String[] args) {
 		int[] a = {10,4,6,2,1,5,3,8,7,9,11};
