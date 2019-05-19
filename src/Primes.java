@@ -7,36 +7,14 @@ import java.util.stream.IntStream;
  */
 public class Primes {
 
-    private static final int MAX = 1000000;
-    private static final boolean[] VALUES = new boolean[MAX];
-    private static final Set<Integer> PROCESSED_PRIMES = new HashSet<>();
-
-
-    static {
-        Arrays.fill(VALUES, true);
-        rejectByDivider(2);
-    }
     public static IntStream stream() {
-        return IntStream.iterate(2, prev -> {
-            for (int next = prev + 1; next < MAX; next++) {
-                if (VALUES[next]) {
-                    rejectByDivider(next);
-                    return next;
-                }
-            }
-            throw new RuntimeException("MAX不够大");
-        });
+        return IntStream.rangeClosed(2, Integer.MAX_VALUE).filter(Primes::isPrime);
     }
 
-    private static void rejectByDivider(int divider) {
-        if (PROCESSED_PRIMES.contains(divider)) {
-            return;
-        }
+    public static boolean isPrime(int number) {
+        for (int i = 2; i < (int) Math.sqrt(number) + 1; i++)
+            if (number % i == 0) return false;
 
-        for (int i = divider * 2; i < MAX; i += divider) {
-            VALUES[i] = false;
-        }
-
-        PROCESSED_PRIMES.add(divider);
+        return true;
     }
 }
